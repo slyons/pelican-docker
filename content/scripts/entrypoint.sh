@@ -10,5 +10,4 @@ then
 fi
 
 /home/app/pre.sh
-exec "$@"
-/home/app/post.sh
+exec "$@" || /home/app/post.sh
